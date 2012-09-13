@@ -1,6 +1,8 @@
 = gtk3webtable
 
-Description goes here.
+On Ubuntu 12.04 you need to install the following:
+
+sduo apt-get install libwebkitgtk-3.0-dev
 
 == Contributing to gtk3webtable
  

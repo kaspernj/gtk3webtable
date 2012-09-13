@@ -3,7 +3,12 @@
 require "rubygems"
 require "gir_ffi"
 require "gir_ffi-gtk3"
-require "#{File.realpath("#{File.dirname(__FILE__)}/../..")}/knjrbfw/lib/knjrbfw.rb"
+
+begin
+  require "#{File.realpath("#{File.dirname(__FILE__)}/../..")}/knjrbfw/lib/knjrbfw.rb"
+rescue LoadError
+  require "knjrbfw"
+end
 
 Knj.gem_require(:Gtk3assist, "gtk3assist")
 Knj.gem_require(:Html_gen, "html_gen")
