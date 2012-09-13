@@ -3,6 +3,8 @@
 require "rubygems"
 require "gir_ffi"
 require "gir_ffi-gtk3"
+require "json"
+require "cgi"
 
 begin
   require "#{File.realpath("#{File.dirname(__FILE__)}/../..")}/knjrbfw/lib/knjrbfw.rb"
